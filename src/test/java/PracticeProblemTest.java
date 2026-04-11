@@ -140,8 +140,7 @@ public class PracticeProblemTest {
         Class<?> testClass = PracticeProblem.class;
         try {
             Class<?>[] cArg = { int.class };
-            Method method = testClass.getDeclaredMethod("seriesExclusive", cArg);
-            assertEquals("0 1 2 3 4", (String) method.invoke(null, 5));
+            Method method = testClass.getDeclaredMethod("seriesExclusive", cArg);            assertEquals("0 1 2 3 4", (String) method.invoke(null, 5));
         } catch (NoSuchMethodException e) {
             fail("Method does not exist");
         } catch (Exception e) {

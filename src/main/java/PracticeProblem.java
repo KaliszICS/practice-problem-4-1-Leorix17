@@ -1,15 +1,46 @@
+/*
+* File: Lesson 4.1: While Loops and accumulators
+* Author: Leo
+* Date Created: April 10, 2026
+* Date Last Modified: April 10, 2026
+*/
 public class PracticeProblem {
 
 	public static void main(String args[]) {
 
 	}
 
-	public static void q1() {
+	public static String seriesInclusive(int num) {
 		//Write question 1 code here
+		if (num < 1) {
+			return "";
+		}
+
+		String result = "";
+		int count = 1;
+		while (count <= num) {
+			result = result + count;
+			if (count < num) {
+				result = result + " ";
+			}
+		count = count + 1;
+		}
+		return result;
 	}
 
-	public static void q2() {
+	public static String seriesExclusive(int num) {
 		//Write question 2 code here
+		if (num < 1) {
+			return "";
+		}
+
+		String result = "0";
+		int count = 1;
+		while (count < num) {
+			result = result + " " + count;
+			count = count + 1;
+		}
+			return result;
 	}
 
 	public static void q3() {
